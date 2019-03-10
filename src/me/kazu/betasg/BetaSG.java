@@ -15,6 +15,7 @@ public class BetaSG extends JavaPlugin{
 		System.out.println("[BetaSG] BetaSG is running!");
 		Bukkit.getServer().getPluginManager().registerEvent(Type.SIGN_CHANGE, new BlockListeners(), Priority.Normal, this);
 		Bukkit.getServer().getPluginManager().registerEvent(Type.PLAYER_INTERACT, new PlayerListeners(), Priority.Normal, this);
+		Bukkit.getServer().getPluginManager().registerEvent(Type.PLAYER_MOVE, new PlayerListeners(), Priority.Normal, this);
 	}
 	
 	public void onDisable()

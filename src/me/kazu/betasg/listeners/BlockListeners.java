@@ -6,7 +6,7 @@ import org.bukkit.event.block.SignChangeEvent;
 public class BlockListeners extends BlockListener {
 	
 	String map = "City";
-	
+	//nazwa mapy do zmiany
 	public void onSignChange(SignChangeEvent e)
 	{
 		if (e.getLine(0).equalsIgnoreCase("[BetaSG]"))
